@@ -2,7 +2,7 @@
 <!-- [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.1-blue.svg)](https://doi.org/10.25663/bl.app.1) -->
 
 # app-network-template-MatLab
-This is a template for a MatLab-based brainlife.io/app to analyze networks.
+This is a template for a MatLab-based brainlife.io/app to analyze networks. This template includes BCT module.
 
 As example the App simply does the following:
 
@@ -37,20 +37,18 @@ We ask that you the following articles when publishing papers that used data, co
 1. Avesani, P., McPherson, B., Hayashi, S. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [https://doi.org/10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
 
 ### Local usage for the App:
-You can run this App locally by copying a NIfTI file of a T1w file inside the directory of the file you are reading (the file should be named t1.nii). After that you can invoke the main.m in a MatLab prompt and the code will resample the input T1w NIfTI you provided to 1 mm.
 
-If you want to change the resolution of the file generated you can edit the appropriate filed inside the config.json.example provide with the github repository you downloaded. The input/output file names of the T1w files can also be changed inside the config.json.example file.
- 
-To set up this App to run locally you will need to have done the following:
+TODO
 
-A. Download the code for this App from https://github.com/francopestilli/app-template-matlab. Save it inside a directory accessible to MatLab, for examople, /mycomputerpath/myResearch/thisTestApp
+<!-- A. Download the code for this App from https://github.com/francopestilli/app-template-matlab. Save it inside a directory accessible to MatLab, for examople, /mycomputerpath/myResearch/thisTestApp
 
 B. Copy a T1w NIfTI-1 file inside the same folder: /mycomputerpath/myResearch/thisTestApp
 
-C. Create a config.json of your own an example file is provided with this repository. The fields inside the config.json my be set as required
+C. Create a config.json of your own an example file is provided with this repository. The fields inside the config.json my be set as required -->
 
 ### Usage of the App on brainlife.io
-When an App is requested to run on brainlife.io, the platform will do the following:
+TODO
+<!-- When an App is requested to run on brainlife.io, the platform will do the following:
 
 A. Stage the code inside this git repo on a computing resource.
 
@@ -62,4 +60,4 @@ The config.json file contains the parameters and the path to the input data need
 
 Running the App on brainlife.io really means "execute this main.m script on a computing resource." 
 
-You can submit this App online at [https://doi.org/10.25663/bl.app.1](https://doi.org/10.25663/bl.app.1) via the "Execute" tab.
+You can submit this App online at [https://doi.org/10.25663/bl.app.1](https://doi.org/10.25663/bl.app.1) via the "Execute" tab. -->
