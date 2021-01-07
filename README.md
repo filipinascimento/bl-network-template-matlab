@@ -1,19 +1,20 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.1-blue.svg)](https://doi.org/10.25663/bl.app.1)
+<!-- [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.1-blue.svg)](https://doi.org/10.25663/bl.app.1) -->
 
-# app-template-MatLab
-This is a template for a MatLab-based brainlife.io/app
+# app-network-template-MatLab
+This is a template for a MatLab-based brainlife.io/app to analyze networks.
 
 As example the App simply does the following:
 
 <ol>
-<li>Loads a T1w NIfTI-1 file.</li>
-<li>Sets a new resolution to resample the file to.</li>
-<li>Resamples it a 1mm isotropic resolution.</li>
-<li>Saves the new NIfTI file down to disk in the current directory.</li>
+<li>Loads a network.</li>
+<li>Display its contents.</li>
 </ol>
  
 ### Author
+- [Filipi N. Silva](filsilva@iu.edu)
+
+based on [template](https://github.com/brainlife/app-template-matlab) created by:
 - [Franco Pestilli](pestilli@utexas.edu)
 
 ### Contributors
