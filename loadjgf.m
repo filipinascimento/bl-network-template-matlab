@@ -107,7 +107,7 @@ function graph = loadjgf(graphJSON)
     end
   end
 
-
+  
   
 %   edges = []
 %   edgeProperties = OrderedDict()

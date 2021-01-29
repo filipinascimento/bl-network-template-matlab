@@ -12,4 +12,4 @@
 t1=$(jq -r .t1 config.json)
 
 # run the actual python code
-./main.m $t1
+./compiled/main $t1

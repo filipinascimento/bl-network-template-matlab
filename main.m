@@ -1,8 +1,7 @@
-function [] = main()
+function [] = main(configJsonFilename)
 
-  % load my own config.json
-  config = loadjson('config-sample.json');
-  
+  % load our own config.json
+  config = loadjson(configJsonFilename);
   
   networkPath = '';
   if isfield(config,'network')
