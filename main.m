@@ -8,7 +8,6 @@ function [] = main(configJsonFilename)
       networkPath = config.network;
   end
 
-
   % Getting threshold parameter
   threshold = 0.0;
   if isfield(config,'threshold')
@@ -25,17 +24,19 @@ function [] = main(configJsonFilename)
   disp("Edge Matrices")
   disp(graph.weightNames)
   
+  % loading the main weight matrix
   w = graph.weightMatrix;
 
   % Using threshold
   w(w<threshold) = 0;
+  w(w>=threshold) = 1;
 
-  % Calculating node strength
-  strengths = sum(w,1);
+  % Calculating node degree
+  degrees = sum(w,1);
 
-  % Plotting a histogram of node strengths
+  % Plotting a histogram of node degrees
   f=figure;
-  hist(strengths);
+  hist(degrees);
   saveas(f, 'output/report.pdf')
   
   
