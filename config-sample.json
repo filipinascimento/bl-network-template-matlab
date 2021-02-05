@@ -1,3 +1,4 @@
 {
-    "network": "data/network.json.gz"
+    "network": "data/network.json.gz",
+    "threshold": 0.5
 }
