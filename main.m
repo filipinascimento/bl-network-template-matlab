@@ -1,5 +1,4 @@
 function [] = main(configJsonFilename)
-
   % load our own config.json
   config = loadjson(configJsonFilename);
   
@@ -7,16 +6,24 @@ function [] = main(configJsonFilename)
   if isfield(config,'network')
       networkPath = config.network;
   end
+  mkdir("output")
+
+  graph = JGFGraph(networkPath)
   
-  tempJSON = tempname;
-  exportedFiles = gunzip(networkPath,tempJSON);
-  networkData = loadjson(string(exportedFiles),'UseMap',1);
-  disp(networkData);
+  disp("Node Properties")
+  disp(graph.nodeProperties)
+
+  disp("Edge Matrices")
+  disp(graph.weightNames)
   
-  graph = networkData("graph");
-  nodes = graph("nodes");
-  edges = graph("edges");
-  disp(loadjgf(graph));
-  % for k = keys(nodes)
-  %   int(k{1})
-  % end
+  w = graph.weightMatrix;
+
+  % Calculating node strength
+  strengths = sum(w,1);
+
+  % Plotting a histogram of node strengths
+  f=figure;
+  hist(strengths);
+  saveas(f, 'output/report.pdf')
+  
+  
