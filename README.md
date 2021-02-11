@@ -2,13 +2,14 @@
 <!-- [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.1-blue.svg)](https://doi.org/10.25663/bl.app.1) -->
 
 # app-network-template-MatLab
-This is a template for a MatLab-based brainlife.io/app to analyze networks. This template includes BCT module.
+This is a template for a MatLab-based brainlife.io/app to analyze networks. This template includes the BCT module.
 
 As example the App simply does the following:
 
 <ol>
 <li>Loads a network.</li>
-<li>Display its contents.</li>
+<li>Calculates the strength distribution.</li>
+<li>Plot the distribution to a pdf file.</li>
 </ol>
  
 ### Author
