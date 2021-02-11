@@ -9,4 +9,4 @@
 # Author: Franco Pestilli
 
 # run the actual python code
-./compiled/main config.json
+singularity exec -e docker://brainlife/mcr:r2019a ./compiled/main config.json

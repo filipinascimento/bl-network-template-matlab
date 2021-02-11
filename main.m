@@ -9,7 +9,7 @@ function [] = main(configJsonFilename)
   end
 
   % Getting threshold parameter
-  threshold = 0.0;
+  threshold = 0.5;
   if isfield(config,'threshold')
     threshold = config.threshold;
   end
@@ -28,8 +28,8 @@ function [] = main(configJsonFilename)
   w = graph.weightMatrix;
 
   % Using threshold
-  w(w<threshold) = 0;
-  w(w>=threshold) = 1;
+  w(w<=threshold) = 0;
+  w(w>threshold) = 1;
 
   % Calculating node degree
   degrees = sum(w,1);
